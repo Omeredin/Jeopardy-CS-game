@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jeopardy Game</title>
+</head>
+
+<body>
+    <h1>Jeopardy</h1>
+    <div id="game-board"></div>
+    <button id="modalBtn"></button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This is your modal content</p>
+        </div>
+    </div>
+
+
+
+    <div class="teams">
+        <div class="team">
+            <button class="plus" onclick="adjustScore('Team 1', 100, 'plus')">+</button>
+            Team 1
+            <button class="minus" onclick="adjustScore('Team 1', 100, 'minus')">-</button>
+        </div>
+        <div class="team">
+            <button class="plus" onclick="adjustScore('Team 2', 100, 'plus')">+</button>
+            Team 2
+            <button class="minus" onclick="adjustScore('Team 2', 100, 'minus')">-</button>
+        </div>
+        <div id="team1-score">Team 1: 0</div>
+        <div id="team2-score">Team 2: 0</div>
+    </div>
+    <script src="jeopardy.js"></script>
+</body>
+
+</html>
